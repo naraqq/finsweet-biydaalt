@@ -5,6 +5,7 @@
 * {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+
 }
 /* navigation section */
 
@@ -440,14 +441,22 @@
     background-color: #c4dff3;
 }
 
-.gege {
-    background-color: red;
-    width: 100vw;
-    height: 100vh;
+.myposition-fixed {
+    position: fixed;
 }
 
-.hehe {
-    background-color: yellow;
-    width: 100vw;
-    height: 100vh;
+.navbar-fixed {
+    position: absolute;
 }
+
+.nav_anime {
+    animation-name: nav-move;
+    transition-duration: 4s;
+}
+
+@keyframes nav-move {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
