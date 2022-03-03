@@ -1,0 +1,453 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* navigation section */
+
+
+.navbar-index {
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+.clone_project {
+    background-color: rgb(255, 227, 202);
+    width: 200px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 12px 32px;
+    text-decoration: none;
+    display: block;
+    color: rgb(231, 150, 0);
+
+}
+
+
+.clone_project:hover {
+    background-color: orange;
+    color: white;
+}
+.text_spacing {
+    padding: 12px;
+}
+
+
+.navtext {
+    display: block;
+    padding-top: 12px;
+    text-decoration: none;
+    color: #1d3444;
+}
+.navtext:hover {
+
+    color: orange;
+}
+
+.navfinsweet {
+    color: #1d3444;
+    text-decoration: none;
+}
+
+.navfinsweet:hover {
+    color: #1d3444;
+}
+
+/* FONTS! */
+
+.fonts {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.font-head {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.font-upper {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #1d3444;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-45 {
+    font-size: 45px;
+}
+
+.fs-60 {
+    font-size: 60px;
+}
+.fs-70 {
+    font-size: 70px;
+}
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+
+/* section css */
+
+.section-head {
+    background-color: #dceaf5;
+    height: 90%;
+}
+
+.head-img {
+    max-width: 80%;
+}
+
+
+.head_img {
+    width: 100%;
+}
+
+.bg-color {
+    background-color: #dceaf5;
+}
+
+/* button css */
+
+.btn-box {
+    padding: 12px 32px;
+    display: inline-block;
+}
+
+.btn-box:hover {
+    background-color: rgb(206, 134, 0);
+    color: white;
+}
+.btn-box2 {
+    padding: 12px 32px;
+    display: inline-block;
+}
+
+.btn-box2:hover {
+    color: #1a3142;;
+}
+
+.btn-box3 {
+    padding: 10px 25px;
+    border: 1px solid #3a5a70;
+    border-radius: 30px;
+    display: inline-block;
+    color: #1d3444;
+    font-weight: 300;
+}
+
+.btn-box3:hover {
+    border: 1px solid orange;
+    color: #1d3444;
+}
+
+.btn-box-footer {
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.btn-box-footer-sub{
+    border-radius: 30px;
+    padding: 10px 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+
+}
+
+
+/* backgrounds */
+
+.bg-orange {
+    background-color: orange;
+}
+
+.b-radius {
+    border-radius: 30px;
+}
+
+.t-deco {
+    text-decoration: none;
+}
+/* background color */
+
+.bg-color {
+    background-color: #dceaf5;
+}
+.bg-color-w {
+    background-color: white;
+}
+.bg-color-o {
+    background-color: orange;
+}
+.bg-color-b {
+    background-color: #063255;
+}
+/* text color css */
+.t-color-g {
+    color: rgb(88, 87, 87);
+}
+
+.t-color-w {
+    color: white;
+}
+
+.t-color-b {
+    color: #1d3444;
+}
+
+.t-color-o {
+    color: orange;
+}
+
+.t-color-bg {
+    color: #385f7b;
+}
+
+/* hover */
+
+.hover-arrow:hover {
+    color: orange;
+}
+
+.card-body-hover:hover {
+    background-color: #f1f9ff;
+    border-radius: 20px;
+}
+/* image  */
+
+.img-section2 {
+    border-radius: 30px;
+    width: 100%;
+    height: 40vh;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.img-section2:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%)
+}
+
+.about-img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+/* section2 */
+
+.section2 {
+    width: 50%;
+    color: #1D3444;
+}
+
+/* section3 */
+
+.logo::after {
+    content: url(images/Ribbon.png);
+    position: absolute;
+    top: -2.5%;
+    left: 84.5%;
+}
+
+.logo-css {
+    position: relative;
+}
+
+.styledimg{
+    width: 50%;
+    height: 60vh;
+}
+
+
+
+.start-up {
+    height: 60vh;
+    justify-content: center;
+    align-items: initial;
+}
+
+.section6 {
+    position: relative;
+}
+
+.section6:after{ content: "";
+    height: 60vh;
+    width: 50%;
+    background: url(/images/gettyimages-1124225083-1024x1024.jpg) no-repeat;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    }
+
+
+/* section7 */
+
+.positioning{
+    position: relative;
+}
+
+.smiling-woman-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+.positioning::after {
+    content: "";
+    background: url(/images/play-icon.svg) no-repeat center white;
+    position: absolute;
+    top: 430px;
+    border: 4px solid white;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+/* section8 */
+
+.pos1-img {
+    width: 100%;
+    padding: 20px;
+    background-position: center;
+}
+
+.radius-rounded {
+    border-radius: 20px;
+}
+
+.card-img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* text1.html */
+
+.text1-head-img {
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.text1-head-img2 {
+    width: 60%;
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+}
+
+.text1-head-img3 {
+    border-radius: 30px;
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+
+.articlesize {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/* about-us.html */
+
+.working-woman-img {
+    border-radius: 30px;
+}
+.share-img {
+    max-width: 100%;
+    height: 90vh;
+    border-radius: 20px;
+}
+
+.dudes-img {
+    width: 100%;
+    height: 65vh;
+    border-radius: 30px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.dudes-img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.inner {
+    overflow: hidden;
+}
+.inner img {
+    transition: all 0.8s ease;
+}
+.inner:hover img {
+    transform: scale(1.1);
+
+}
+
+/* Careers */
+
+.dude4-img {
+    width: 100%;
+    height: 65vh;
+    border-radius: 20px;
+}
+
+.feature {
+    position: relative;
+}
+
+.feature2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=1);
+}
+
+.hover-card:hover {
+    background-color: #c4dff3;
+}
+
+.gege {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hehe {
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+}
