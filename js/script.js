@@ -19,24 +19,30 @@ let request = new XMLHttpRequest();
 request.onload = function () {
   let text = request.responseText;
   let myObject = JSON.parse(text);
-  let myData = myObject.data;
-  let requestArr = Object.entries(myData);
-  // let myData = [obj1, obj2, obj3];
-
-  requestArr.forEach((element) => {
-    element.forEach((e) => {});
-  });
-
-  // class Car {
-  //   constructor(content, thumbnail, title) {
-  //     this.content = requestArr.content;
-  //   }
-  // }
-  console.log(requestArr);
+  generateHtml(myObject.data);
 };
+
 request.open("GET", "data/company_intro.json");
 request.send();
-
+function generateHtml(arr) {
+  let card = `<div style="display : flex">`;
+  arr.forEach((e) => {
+    card += `
+        <div class="col-4 t-color-b">
+                <img class="img-section2" src="${e.thumbnail}" alt="img" />
+                <h3 class="my-4">${e.title}</h3>
+                <p>
+                  ${e.content}
+                </p>
+                <a
+                  class="t-deco t-color-o hover-arrow fw-300"
+                  href="Services.html"
+                  >Learn More <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>`;
+  });
+  document.getElementById("test33").innerHTML = card + `</div>`;
+}
 // Add scrollDetect callback function on window.addEventlistener('scroll', callback) Listener
 
 // Define Play button variable
