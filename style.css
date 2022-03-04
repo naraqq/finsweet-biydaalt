@@ -229,8 +229,8 @@
 
 .img-section2 {
   border-radius: 30px;
-  width: 100%;
-  height: 40vh;
+  width: 400px;
+  height: 30vh;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -446,4 +446,10 @@
   100% {
     background-color: green;
   }
+}
+
+.section2-js {
+    display: flex;
+    gap: 20px;
+    margin: auto;
 }

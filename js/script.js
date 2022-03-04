@@ -25,7 +25,7 @@ request.onload = function () {
 request.open("GET", "data/company_intro.json");
 request.send();
 function generateHtml(arr) {
-  let card = `<div style="display : flex">`;
+  let card = `<div class="section2-js">`;
   arr.forEach((e) => {
     card += `
         <div class="col-4 t-color-b">
