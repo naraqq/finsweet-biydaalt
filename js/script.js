@@ -1,51 +1,41 @@
-// Use window.addEventListener("scroll",) Event listener.
-// then add callback function that includes when the window height scroll down to 100vh and add 'fixed-top' class on Navbar element.
-// For your mind: object.classList.add('class') this method is add class on selected element
-// e.target.scrollingElement.scrollTop use that method when track scrolling amount
-
-// $(function () {
-//   var header = $("#navbar_fix");
-//   $(window).scroll(function () {
-//     var scroll = $(window).scrollTop();
-//     console.log(scroll);
-//     if (scroll >= 1) {
-//       header.removeClass("mypositionfixed").addClass("navbar-fixed");
-//     } else {
-//       header.removeClass("navbar-fixed").addClass("mypositionfixed");
-//     }
-//     if (scroll >= 640) {
-//       header.removeClass("navbar-fixed").addClass("mypositionfixed");
-//     } else {
-//       header.removeClass("mypositionfixed").addClass("navbar-fixed");
-//     }
-//   });
-// });
-
 window.addEventListener("scroll", myFunction);
 let mainNav = document.getElementById("navbar_fix");
-
 function myFunction(e) {
   let scrolled = e.target.scrollingElement.scrollTop;
   if (scrolled <= 600) {
     mainNav.classList.add("navbar-fixed");
     mainNav.classList.remove("nav_anime");
-
   } else {
     mainNav.classList.add("myposition-fixed");
     mainNav.classList.remove("navbar-fixed");
     mainNav.classList.add("nav_anime");
-    
-    // mainNav.classList.add("myposition-fixed");
   }
-  //   if ((e.target.scrollingElement.scrollTop = 650)) {
-  //     mainNav.classList.add("navbar-fixed");
-  //   } else {
-  //     add("navbar-fixed");
-  //     mainNav.classList.add("myposition-fixed");
-  //   }
 }
-// var scrollElm = document.scrollingElement;
-// scrollElm.scrollTop = 0;
+// page iig refresh hiihed ehlel hesegt butsaana
+var scrollElm = document.scrollingElement;
+scrollElm.scrollTop = 0;
+
+let request = new XMLHttpRequest();
+request.onload = function () {
+  let text = request.responseText;
+  let myObject = JSON.parse(text);
+  let myData = myObject.data;
+  let requestArr = Object.entries(myData);
+  // let myData = [obj1, obj2, obj3];
+
+  requestArr.forEach((element) => {
+    element.forEach((e) => {});
+  });
+
+  // class Car {
+  //   constructor(content, thumbnail, title) {
+  //     this.content = requestArr.content;
+  //   }
+  // }
+  console.log(requestArr);
+};
+request.open("GET", "data/company_intro.json");
+request.send();
 
 // Add scrollDetect callback function on window.addEventlistener('scroll', callback) Listener
 
