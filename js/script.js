@@ -14,7 +14,7 @@ function myFunction(e) {
 // page iig refresh hiihed ehlel hesegt butsaana
 var scrollElm = document.scrollingElement;
 scrollElm.scrollTop = 0;
-
+//daalgawar2
 let request = new XMLHttpRequest();
 request.onload = function () {
   let text = request.responseText;
@@ -43,27 +43,41 @@ function generateHtml(arr) {
   });
   document.getElementById("test33").innerHTML = card + `</div>`;
 }
-// Add scrollDetect callback function on window.addEventlistener('scroll', callback) Listener
+//daalgawar4
 
-// Define Play button variable
+let request2 = new XMLHttpRequest();
+request2.onload = function () {
+  let myResponse = request.responseText;
+  let mySecondRes = JSON.parse(myResponse);
+  generateHtml2(mySecondRes.data);
+}
+request2.open("GET", "data/posts.json");
+request2.send();
+console.log(my);
 
-// Create a modal with a single line of JavaScript: https://getbootstrap.com/docs/5.1/components/modal/#via-javascript
-// Define finsetModal then use Bootstrap modal Object request
-
-// Create Click Event Listener on Play button variable (you already created above)
-// add finsetModal.show() on callback function
-// Select '.modal-body' class from finsetModal variable then use innerHTML method and add Youtube embed code
-
-// Create an XMLHttpRequest object
-// Create a callback function
-// Open a GET request and use data from ../data/company_intro.json
-// Send the request
-
-/*  Add subscription email action. When subscription POST request is successful, 
-    change the email element and subscribe button into "Your subscription is successful" Text. 
-    POST request should be done by AJAX request. We need a POST request end point for subscription email. 
-*/
-// Define Subscribe by ID name
-
-// Add CLICK Event Listener on the button
-// Then using Fetch method POST input value to http://52.221.191.153/subscribe/subscription/create
+function generateHtml2(myArray) {
+  let cart = `
+  <div class="blog-section-js">
+  `
+  myArray.forEach((element) => {
+    cart += `
+    <div class="col-4">
+              <div class="card shadow radius-rounded" style="width: 24rem">
+                <img src="${element.thumbnail}" class="card-img-top" alt="..." />
+                <div class="card-body p-4 card-body-hover">
+                  <h4 class="card-title">${element.title}</h4>
+                  <p class="card-text">
+                  ${element.content}
+                  </p>
+                  <a
+                    href="text1.html"
+                    class="test1 t-deco t-color-o hover-arrow stretched-link fw-300"
+                    >Learn more <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+    `
+  })
+  document.getElementById("blogSection").innerHTML = cart + `</div>`;
+}

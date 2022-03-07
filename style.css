@@ -453,3 +453,29 @@
     gap: 20px;
     margin: auto;
 }
+
+.blog-section-js {
+  display: flex;
+}
+
+.experience-img {
+  max-width: 50%;
+  position: absolute;
+  left: 0;
+}
+.position-relative {
+  position: relative;
+  overflow: hidden;
+}
+.margin-left {
+  margin-left: 100px;
+}
+
+.img-blur {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img-blur:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
